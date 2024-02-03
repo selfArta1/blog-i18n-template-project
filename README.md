@@ -10,3 +10,7 @@ pnpm install -D prettier-plugin-tailwindcss
 
 for next i18n should
 pnpm install next-intl
+
+I18N configuration, reference https://nextjs.org/docs/app/building-your-application/routing/internationalization
+Why favicon.ico can't not display in i18N environment
+see https://github.com/vercel/next.js/issues/52813 only change favicon.ico to icon.ico
