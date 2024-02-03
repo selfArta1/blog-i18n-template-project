@@ -7,12 +7,11 @@ export default async function Home({
 }: {
   params: { lang: Locale };
 }) {
-  console.log("Home: ", lang);
   const dict = await getDictionary(lang);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>资源已被移动或删除。 资源正在进行维护。</h1>
+      <h1>{dict.Homepage.topic}</h1>
     </main>
   );
 }
