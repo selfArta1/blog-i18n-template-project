@@ -13,7 +13,7 @@ export async function generateMetadata({
 }: {
   params: { lang: Locale };
 }) {
-  console.log("which locale: " + lang);
+  console.log("layout locale: " + lang);
   const dict = await getDictionary(lang);
   return {
     title: dict.Homepage.title,
