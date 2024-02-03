@@ -3,6 +3,7 @@ import { syhFont, sysFont } from "@/fonts/fonts";
 import "../globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
+import NavBar from "./components/Navbar";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -29,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang} data-theme="cupcake">
-      <body className={syhFont.className}>{children}</body>
+      <body className={syhFont.className}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
