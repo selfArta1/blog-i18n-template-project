@@ -11,7 +11,10 @@ export default async function Home({
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>{dict.Homepage.topic}</h1>
+      <div className="prose">
+        <h3>{dict.Homepage.topic}</h3>
+        <p> ok that's right</p>
+      </div>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar w-full bg-base-300">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-circle btn-ghost">
@@ -35,25 +35,50 @@ export default function NavBar() {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">SelfArt</a>
+        <div className="relative hidden md:flex">
+          <div className="form-control ml-4 md:ml-32">
+            <input
+              type="text"
+              placeholder="Search"
+              className="input input-bordered w-24 md:w-auto"
+            />
+          </div>
+          <button className="btn btn-circle btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
       <div className="navbar-center"></div>
       <div className="navbar-end">
-        <button className="btn btn-circle btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        <div className="dropdown dropdown-end hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
+            Dropdown
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu dropdown-content z-[1] mt-4 w-52 rounded-box bg-base-100 p-2 shadow"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </button>
+            <li>
+              <a>Item 1</a>
+            </li>
+            <li>
+              <a>Item 2</a>
+            </li>
+          </ul>
+        </div>
         <button className="btn btn-circle btn-ghost">
           <div className="indicator">
             <svg
