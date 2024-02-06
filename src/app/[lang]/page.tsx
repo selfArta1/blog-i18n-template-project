@@ -10,31 +10,25 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h3>{dict.Homepage.topic}</h3>
-      <p> ok that right</p>
-      <div className="p-4">
-        <div className="... flow-root">
-          <div className="... my-4">Well, let me tell you something, ...</div>
-        </div>
-        <div className="... flow-root">
-          <div className="... my-4">Sure, go ahead, laugh if you want...</div>
-        </div>
-        <p>
-          n this approach, we will use the ‘fixed’ class to fix the navbar. When
-          an element has a fixed position, it stays in the same position even if
-          the user scrolls the page. Fixed elements do not move when scrolling,
-          effectively creating a fixed element that remains visible regardless
-          of the scroll position.
-        </p>
-        <p>
-          n this approach, we will use the ‘fixed’ class to fix the navbar. When
-          an element has a fixed position, it stays in the same position even if
-          the user scrolls the page. Fixed elements do not move when scrolling,
-          effectively creating a fixed element that remains visible regardless
-          of the scroll position.
-        </p>
-      </div>
-    </main>
+    <div className="flex w-full flex-col md:flex-row">
+      <h1>
+        翻译： 如果您希望完全依赖URL来解析语言环境，您可以禁用基于
+        accept-language 请求头和之前访问中可能存在的 cookie 值的语言环境检测。
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="h-6 w-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0-3-3m3 3 3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
+          />
+        </svg>
+      </h1>
+    </div>
   );
 }

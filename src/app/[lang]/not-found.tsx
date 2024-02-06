@@ -1,5 +1,6 @@
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
+import { cookies } from "next/headers";
 import Link from "next/link";
 
 //That's a issue from github  see https://github.com/vercel/next.js/issues/50699
