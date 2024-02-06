@@ -1,4 +1,11 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 export default function NavBar() {
+  const usepathName = usePathname();
+
+  console.log("usepathname: ", usepathName);
   return (
     <div className="navbar sticky top-0 bg-base-300">
       <div className="navbar-start">

@@ -4,7 +4,7 @@ import "../globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import NavBar from "./components/Navbar";
-import { Main } from "next/document";
+import { setCookie } from "../lib/actions";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -15,8 +15,8 @@ export async function generateMetadata({
 }: {
   params: { lang: Locale };
 }) {
-  console.log("layout locale: " + lang);
   const dict = await getDictionary(lang);
+
   return {
     title: dict.Homepage.title,
   };

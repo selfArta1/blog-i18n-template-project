@@ -5,6 +5,13 @@
   },
 
   "NotFound": {
-    "content": "Page not found"
+    "content": "Page not found",
+    "return": "Return Home"
+  },
+  "Navbar": {
+    "menu01": "AI Chat",
+    "menu02": "Tools",
+    "menu03": "3D Blender",
+    "menu04": "Story"
   }
 }

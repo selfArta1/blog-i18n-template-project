@@ -5,6 +5,13 @@
   },
 
   "NotFound": {
-    "content": "没有发现页面"
+    "content": "没有发现页面",
+    "return": "返回主页"
+  },
+  "Navbar": {
+    "menu01": "AI 聊天",
+    "menu02": "工具",
+    "menu03": "3D 建模",
+    "menu04": "小说绘图"
   }
 }
