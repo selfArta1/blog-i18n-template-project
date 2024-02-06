@@ -10,5 +10,5 @@ export default async function Page({
 }: {
   params: { lang: Locale };
 }) {
-  return <NotFound {...{ params: { lang } }} />;
+  return <NotFound params={{ lang }} />;
 }

@@ -13,7 +13,6 @@ export default async function NotFound({
   params: { lang: Locale };
 }) {
   const dict = await getDictionary(lang);
-  console.log("call not found");
 
   return (
     <div className="card m-auto w-96 bg-orange-200 shadow-xl">

@@ -29,10 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
+  const mylocale = params.lang;
+  console.log("mylocale: ", mylocale);
   return (
     <html lang={params.lang} data-theme="cupcake">
       <body className={syhFont.className}>
-        <NavBar />
+        <NavBar lang={mylocale} />
         <main className="m-auto w-full min-w-[300px] p-4">{children}</main>
       </body>
     </html>
